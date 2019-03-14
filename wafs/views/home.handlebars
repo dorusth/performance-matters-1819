@@ -1,0 +1,12 @@
+{{#each item}}
+	<article>
+		<div>
+			<a class="link" href="/issues/{{id}}">
+				<h2> {{owner.login}}</h2>
+			 </a>
+			 <p> Repo name: {{name}}</p>
+			 <p> Open issues: {{open_issues_count}} </p>
+		</div>
+		<img src="{{owner.avatar_url}}">
+	 </article>
+{{/each}}

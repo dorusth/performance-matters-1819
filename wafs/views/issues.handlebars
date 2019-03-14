@@ -1,0 +1,27 @@
+<h3>open</h3>
+
+{{#each data.open}}
+<article class="issue">
+	<div>
+		<a class="link" target="_blank" href="{{html_url}}">
+			<h2> {{title}}</h2>
+		 </a>
+		 <p> User: {{user.login}}</p>
+		 <p> last commit: {{created_at}} </p><p>{{state}}</p>
+	</div>
+ </article>
+{{/each}}
+
+<h3>closed</h3>
+
+{{#each data.closed}}
+<article class="issue">
+	<div>
+		<a class="link" target="_blank" href="{{html_url}}">
+			<h2> {{title}}</h2>
+		 </a>
+		 <p> User: {{user.login}}</p>
+		 <p> last commit: {{created_at}} </p><p>{{state}}</p>
+	</div>
+ </article>
+{{/each}}
