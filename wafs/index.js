@@ -4,6 +4,9 @@ const port = 3000
 const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 const request = require('request')
+require('dotenv').config()
+// const redis = require('redis')
+// const client = redis.createClient();
 
 
 app.engine('handlebars', exphbs({
@@ -24,7 +27,7 @@ app.get('/', (req, res) => {
 		}
 	}
 	request({
-		url: 'https://api.github.com/repos/cmda-minor-web/web-app-from-scratch-1819/forks?per_page=50&access_token=3a34c6a3e4264f07a6fbb4b6f0b73f99a21c9b28',
+		url: 'https://api.github.com/repos/cmda-minor-web/web-app-from-scratch-1819/forks?per_page=50&access_token=' + process.env.GIT_KEY,
 		headers: {
 			'User-Agent': 'request'
 		}
@@ -46,7 +49,7 @@ app.get('/issues/:id', (req, res) => {
 		}
 	}
 	request({
-		url: 'https://api.github.com/repositories/' + req.params.id + '/issues?access_token=3a34c6a3e4264f07a6fbb4b6f0b73f99a21c9b28',
+		url: 'https://api.github.com/repositories/' + req.params.id + '/issues?access_token=' + process.env.GIT_KEY,
 		headers: {
 			'User-Agent': 'request'
 		},
@@ -54,7 +57,7 @@ app.get('/issues/:id', (req, res) => {
 	}, callback)
 
 	request({
-		url: 'https://api.github.com/repositories/' + req.params.id + '/issues?state=closed&access_token=3a34c6a3e4264f07a6fbb4b6f0b73f99a21c9b28',
+		url: 'https://api.github.com/repositories/' + req.params.id + '/issues?state=closed&access_token=' + process.env.GIT_KEY,
 		headers: {
 			'User-Agent': 'request'
 		},
