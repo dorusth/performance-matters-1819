@@ -5,10 +5,10 @@ const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 const request = require('request')
 require('dotenv').config()
-// const redis = require('redis')
-// const client = redis.createClient();
+const compression = require('compression')
+const fs = require('fs');
 
-
+app.use(compression())
 app.engine('handlebars', exphbs({
 	defaultLayout: 'main'
 }));
@@ -22,7 +22,16 @@ app.get('/', (req, res) => {
 		}else{
 			var info = JSON.parse(body);
 			res.render('home', {
-				item: info
+				item: info,
+				helpers: {
+			        imgCheck: function (index) {
+						if (fs.existsSync("./public/img/img_optim/" + index.data.key + ".jpg")) {
+						    return index.data.key + '.jpg';
+						}else{
+							return index.data.key + '.png';
+						}
+					},
+			    }
 			})
 		}
 	}

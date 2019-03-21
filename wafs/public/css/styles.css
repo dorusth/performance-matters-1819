@@ -16,6 +16,10 @@ h3{
 	margin: 6em 0 1em;
 }
 
+a:hover{
+	text-decoration: none;
+}
+
 article{
 	display: flex;
 	justify-content: space-between;
