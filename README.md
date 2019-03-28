@@ -1,6 +1,6 @@
-# Project 1 @cmda-minor-web · 2018-2019
+# Performance matters
 
-## githus repos web performance
+## github repos web performance
 
 For this project i have optimized the load times of my web-app-from-scratch project.
 
