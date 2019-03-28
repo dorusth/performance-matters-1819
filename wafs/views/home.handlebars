@@ -7,6 +7,10 @@
 			 <p> Repo name: {{name}}</p>
 			 <p> Open issues: {{open_issues_count}} </p>
 		</div>
-		<img src="{{owner.avatar_url}}">
+		<picture>
+			<source srcset="../img/webp/{{@index}}.webp" type="image/webp">
+			<source srcset="../img/img_optim/{{imgCheck}}" type="image/jpeg">
+			<img src="../img/img_optim/{{imgCheck}}" alt="Alt Text!">
+		</picture>
 	 </article>
 {{/each}}
