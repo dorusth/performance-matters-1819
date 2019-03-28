@@ -1,5 +1,4 @@
 {{#each item}}
-<p></p>
 	<article>
 		<div>
 			<a class="link" href="/issues/{{id}}">
@@ -8,6 +7,10 @@
 			 <p> Repo name: {{name}}</p>
 			 <p> Open issues: {{open_issues_count}} </p>
 		</div>
-		<img src="../img/img_optim/{{imgCheck}}">
+		<picture>
+			<source srcset="../img/webp/{{@index}}.webp" type="image/webp">
+			<source srcset="../img/img_optim/{{imgCheck}}" type="image/jpeg">
+			<img src="../img/img_optim/{{imgCheck}}" alt="Alt Text!">
+		</picture>
 	 </article>
 {{/each}}

@@ -59,7 +59,7 @@ article div h2:hover::before{
 	width: 100%;
 }
 
-article img{
+article img, article picture{
 	height: 10em;
 }
 
