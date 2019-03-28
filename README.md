@@ -17,7 +17,8 @@ For this project i have optimized the load times of my web-app-from-scratch proj
 <!-- Maybe a table of contents here? 📚 -->
 ## table of contents
 - [Installation](#Installation)
-- [Features](#performance improvements)
+- [improvements](#performance improvements)
+- [to-do/done](#to-do/done)
 
 <!-- How about a section that describes how to install this project? 🤓 -->
 ## Installation
@@ -63,11 +64,13 @@ After running an audit without clearing cache the performance reduced on the TTF
 
 
 
-## to-do
+## to-do/done
+- [x] serverside rendering
 - [x] File Compression
 - [x] Image optimisation
-- [ ] Minify files
-- [ ] Reduce TTFB
+- [x] webp
+- [x] Reduce TTFB
+- [x] service worker
 
 
 [MIT](LICENCE) © [Dorus ten Haaf](https://dorustenhaaf.com)
