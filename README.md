@@ -1,54 +1,61 @@
-# Performance Matters @cmda-minor-web · 2018-2019
+# Project 1 @cmda-minor-web · 2018-2019
 
-In dit vak gaan we de eerder bij de OBA gemaakte client side web applicatie ombouwen naar een server side gerenderde applicatie. Verder gaan we een reeks van optimalisaties doorvoeren om de performance van de applicatie te verbeteren. Uiteindelijk zorgen we ervoor dat de applicatie offline beschikbaar.
+## githus repos web performance
 
-## Leerdoelen
-- _Je weet het verschil tussen client side en server side rendering en kan server side rendering toepassen_
-- _Je begrijpt hoe de critical render path werkt, en hoe je deze kan optimaliseren voor een betere runtime en/of perceived performance._
-- _Je begrijpt hoe een Service Worker werkt en kan deze in jou applicatie implementeren._
-
-[Rubric](https://docs.google.com/spreadsheets/d/e/2PACX-1vTO-pc2UMvpT0pUjt6NJeckc5N9E7QvCxEfVJW1JjuM0m_9MM8ra05J0s6br486Rocz5JVMhAX_C37_/pubhtml?gid=0&single=true)
-
-## Lesprogramma
-
-### Week 1 - Server Side rendering
-
-Doel: Webpagina's server side renderen
-
-[Opdrachten](https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-1.md)
-
-[Slides](...)
-
-### Week 2 - Critical Render Path  
-
-Doel: Critical Render path optimaliseren
-[Opdrachten](https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-2.md)
-
-[Slides](...)
-
-### Week 3 - Going Offline 
-
-Doel: Webpagina's offline beschikbaar stellen
-
-[Opdrachten](https://github.com/cmda-minor-web/performance-matters-1819/blob/master/week-3.md)
-
-[Slides](...)
+For this project i have optimized the load times of my web-app-from-scratch project.
 
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+<!-- Add a link to your live demo in GitHub Pages 🌐-->
+## Code
+[Repo](https://github.com/dorusth/performance-matters-1819/tree/image_optimize/wafs)
 
 <!-- ☝️ replace this description with a description of your own work -->
 
 <!-- Add a nice image here at the end of the week, showing off your shiny frontend 📸 -->
+![app](readme-img/app.png)
 
 <!-- Maybe a table of contents here? 📚 -->
+## table of contents
+- [Installation](#Installation)
+- [Features](#performance improvements)
 
 <!-- How about a section that describes how to install this project? 🤓 -->
+## Installation
+This project works with: node, express, handlebars and compression.
+Clone the repo with:
+```bash
+$ git clone --branch image_optimize https://github.com/dorusth/performance-matters-1819.git
+```
+to use the app use
+```bash
+$ npm install
+$ npm start
+```
+and open "http://localhost:3000/"
 
 <!-- ...but how does one use this project? What are its features 🤔 -->
+## performance improvements
+![app](readme-img/audit1.png)
+<details>
+ <summary>Compression</summary>
+ ![app](readme-img/audit2.png)
+ Using the compression package i reduced the file size of the javascript and css.
+ ![app](readme-img/size1.png)
+ ![app](readme-img/size2.png)
+</details>
 
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
+<details>
+ <summary>Image optimisation</summary>
+ ![app](readme-img/audit3.png)
+ I've stored the images locally and optimized them for better loading times.
+</details>
 
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
 
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+## to-do
+- [x] File Compression
+- [x] Image optimisation
+- [ ] Minify files
+- [ ] Reduce TTFB
+
+
+[MIT](LICENCE) © [Dorus ten Haaf](https://dorustenhaaf.com)
