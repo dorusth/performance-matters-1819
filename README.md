@@ -37,28 +37,30 @@ and open "http://localhost:8080/"
 ## performance improvements
 ![audit 1](readme-img/audit1.png)
 <details>
- <summary>Compression</summary>
- ![compression audit](readme-img/audit2.png)
- Using the compression package i reduced the file size of the javascript and css.
- ![pre-compression size](readme-img/size1.png)
- ![compression size](readme-img/size2.png)
+<summary>Compression</summary>
+![compression audit](readme-img/audit2.png)
+Using the compression package i reduced the file size of the javascript and css.
+![pre-compression size](readme-img/size1.png)
+
+![compression size](readme-img/size2.png)
 </details>
 
 <details>
- <summary>Image optimisation</summary>
- ![image optimisation audit](readme-img/audit3.png)
- I've stored the images locally and optimized them for better loading times.
+<summary>Image optimisation</summary>
+![image optimisation audit](readme-img/audit3.png)
+I've stored the images locally and optimized them for better loading times.
 
- ![image optimisation audit](readme-img/audit4.png)
+![image optimisation audit](readme-img/audit4.png)
+After that i added webp format images for further optimisation when supported
 </details>
 
 <details>
- <summary>Service Worker</summary>
- ![image optimisation audit](readme-img/audit5.png)
- I've Added a service worker for caching the main page and styling and it increased performance
+<summary>Service Worker</summary>
+![image optimisation audit](readme-img/audit5.png)
+I've Added a service worker for caching the main page and styling and it increased performance
 
- ![image optimisation audit](readme-img/audit5.png)
- After running an audit without clearing cache the performance reduced on the TTFB.
+![image optimisation audit](readme-img/audit5.png)
+After running an audit without clearing cache the performance reduced on the TTFB.
 </details>
 
 
