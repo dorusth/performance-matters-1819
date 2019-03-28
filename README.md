@@ -36,32 +36,31 @@ and open "http://localhost:8080/"
 <!-- ...but how does one use this project? What are its features 🤔 -->
 ## performance improvements
 ![audit 1](readme-img/audit1.png)
-<details>
-<summary>Compression</summary>
+
+### Compression
 ![compression audit](readme-img/audit2.png)
 Using the compression package i reduced the file size of the javascript and css.
 ![pre-compression size](readme-img/size1.png)
 
 ![compression size](readme-img/size2.png)
-</details>
 
-<details>
-<summary>Image optimisation</summary>
+
+### Image optimisation
 ![image optimisation audit](readme-img/audit3.png)
 I've stored the images locally and optimized them for better loading times.
 
 ![image optimisation audit](readme-img/audit4.png)
 After that i added webp format images for further optimisation when supported
-</details>
 
-<details>
-<summary>Service Worker</summary>
+
+
+### Service Worker
 ![image optimisation audit](readme-img/audit5.png)
 I've Added a service worker for caching the main page and styling and it increased performance
 
 ![image optimisation audit](readme-img/audit5.png)
 After running an audit without clearing cache the performance reduced on the TTFB.
-</details>
+
 
 
 ## to-do
