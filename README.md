@@ -7,7 +7,7 @@ For this project i have optimized the load times of my web-app-from-scratch proj
 
 <!-- Add a link to your live demo in GitHub Pages 🌐-->
 ## Code
-[Repo](https://github.com/dorusth/performance-matters-1819/tree/image_optimize/wafs)
+[Repo](https://performance-matters-1819.herokuapp.com/)|[Repo](https://github.com/dorusth/performance-matters-1819/)
 
 <!-- ☝️ replace this description with a description of your own work -->
 
@@ -24,30 +24,41 @@ For this project i have optimized the load times of my web-app-from-scratch proj
 This project works with: node, express, handlebars and compression.
 Clone the repo with:
 ```bash
-$ git clone --branch image_optimize https://github.com/dorusth/performance-matters-1819.git
+$ git clone https://github.com/dorusth/performance-matters-1819.git
 ```
 to use the app use
 ```bash
 $ npm install
 $ npm start
 ```
-and open "http://localhost:3000/"
+and open "http://localhost:8080/"
 
 <!-- ...but how does one use this project? What are its features 🤔 -->
 ## performance improvements
-![app](readme-img/audit1.png)
+![audit 1](readme-img/audit1.png)
 <details>
  <summary>Compression</summary>
- ![app](readme-img/audit2.png)
+ ![compression audit](readme-img/audit2.png)
  Using the compression package i reduced the file size of the javascript and css.
- ![app](readme-img/size1.png)
- ![app](readme-img/size2.png)
+ ![pre-compression size](readme-img/size1.png)
+ ![compression size](readme-img/size2.png)
 </details>
 
 <details>
  <summary>Image optimisation</summary>
- ![app](readme-img/audit3.png)
+ ![image optimisation audit](readme-img/audit3.png)
  I've stored the images locally and optimized them for better loading times.
+
+ ![image optimisation audit](readme-img/audit4.png)
+</details>
+
+<details>
+ <summary>Service Worker</summary>
+ ![image optimisation audit](readme-img/audit5.png)
+ I've Added a service worker for caching the main page and styling and it increased performance
+
+ ![image optimisation audit](readme-img/audit5.png)
+ After running an audit without clearing cache the performance reduced on the TTFB.
 </details>
 
 
