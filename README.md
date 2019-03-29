@@ -7,7 +7,7 @@ For this project i have optimized the load times of my web-app-from-scratch proj
 
 <!-- Add a link to your live demo in GitHub Pages 🌐-->
 ## Code
-[Repo](https://performance-matters-1819.herokuapp.com/)|[Repo](https://github.com/dorusth/performance-matters-1819/)
+[Live demo](https://performance-matters-1819.herokuapp.com/)|[Repo](https://github.com/dorusth/performance-matters-1819/)
 
 <!-- ☝️ replace this description with a description of your own work -->
 
